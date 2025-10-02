@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To Do List — Tasks & Subtasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task App</h1>
+
+    <!-- Task Input -->
+    <div class="task-input">
+      <label><strong>Task Name</strong></label>
+      <input type="text" id="taskTitle" placeholder="Enter Task Title">
+
+      <label><strong>Task Description</strong></label>
+      <textarea id="taskDescription" placeholder="Enter Task Description"></textarea>
+
+      <label><strong>Date / Task Deadline</strong></label>
+      <input type="datetime-local" id="taskDeadline">
+
+      <label><strong>Additional Notes (optional)</strong></label>
+      <textarea id="extraNotes" placeholder="Additional Notes (optional)"></textarea>
+
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <!-- All tasks -->
+    <div id="allTasksContainer">
+      <h2 id="allTasksHeading" style="display:none">All Tasks</h2>
+      <div id="taskList" class="task-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

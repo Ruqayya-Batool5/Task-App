@@ -1,0 +1,282 @@
+/* ===================== PAGE LAYOUT ===================== */
+body {
+  font-family: Arial, sans-serif;
+  background: #fad1d1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px; /* Main content width */
+  width: 100%;
+  background-color: rgb(223, 164, 167);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  padding: 32px;
+  border-radius: 10px;
+}
+
+h1 { 
+  text-align: center; 
+  margin-bottom: 18px; 
+}
+
+/* ===================== INPUT AREA ===================== */
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input label { 
+  font-size: 14px; 
+  margin-top: 6px; 
+}
+
+.task-input input,
+.task-input textarea {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d8b4b4;
+  border-radius: 8px;
+  background: #fff;
+  white-space: pre-wrap;
+}
+
+.task-input textarea { 
+  min-height: 80px; 
+  resize: vertical; /* Allow resizing vertically */
+}
+
+/* ===================== GLOBAL BUTTONS ===================== */
+button {
+  padding: 10px 12px;
+  cursor: pointer;
+  background-color: #d69191;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  color: #000;
+}
+
+button:hover { 
+  background-color: rgb(185,106,106); 
+  color: #fff; 
+}
+
+/* ===================== TASK LIST HEADING ===================== */
+#allTasksHeading {
+   text-align: center;     /* Task heading alignment */
+    font-size: 22px;  
+  margin: 18px 0 8px;
+  color: #4a1a1a;
+}
+
+.task-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 14px; 
+}
+
+/* ===================== TASK CARD ===================== */
+.task-card {
+  background: #f3b5b5;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.task-number { 
+  font-size: 26px; 
+  font-weight: 700; 
+  color: #5a2a2a; 
+   text-align: center; 
+
+}
+
+.task-top-row { 
+  display:flex; 
+  align-items:center; 
+  gap:10px; 
+}
+
+.task-title { 
+  font-size: 16px; 
+  font-weight:700; 
+  word-wrap: break-word; 
+}
+
+/* ===================== DESCRIPTION & NOTES ===================== */
+.task-description,
+.task-notes {
+  font-size: 14px;
+  color: #333;
+  background: #fff2f2;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+/* ===================== TASK META LINE ===================== */
+.task-info { 
+  font-size: 12px; 
+  color: #444; 
+}
+
+/* ===================== BUTTONS ROW ===================== */
+.task-buttons { 
+  display:flex; 
+  gap:10px; 
+  margin-top:6px; 
+}
+
+.task-buttons button { 
+  flex:1; 
+  font-size:14px; 
+}
+
+/* ===================== SUBTASKS SECTION ===================== */
+.subtasks { 
+  margin-top: 8px; 
+  padding-top: 6px; 
+}
+
+.subtasks-heading {
+  text-align: center;   
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #4a1a1a;
+  font-size: 18px;      
+}
+
+/* ===================== SUBTASK ITEM ===================== */
+.subtask-item {
+  background: #ffecec;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e0bdbd;
+  display:flex;
+  flex-direction: column;
+  gap:8px;
+  overflow-wrap: break-word;
+  margin-bottom: 14px; /* Add gap between subtasks */
+}
+
+.subtask-content { 
+  display:flex; 
+  gap:10px; 
+  align-items:center; 
+}
+
+.subtask-title { 
+  font-weight:600; 
+  word-wrap: break-word; 
+}
+
+.subtask-description { 
+  font-size:13px; 
+  color:#333; 
+  padding-top:6px; 
+  border-top:1px dashed #d7bdbd; 
+  white-space:pre-wrap; 
+  overflow-wrap: break-word; 
+}
+
+/* ===================== SUBTASK FORM (INLINE) ===================== */
+.subtask-form {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:6px;
+}
+
+.subtask-form input,
+.subtask-form textarea {
+  padding:10px;
+  font-size:14px;
+  border:1px solid #d8b4b4;
+  border-radius:6px;
+  box-sizing:border-box;
+  width:100%;
+  background:#fff;
+}
+
+.subtask-form textarea { 
+  min-height:70px; 
+  resize:vertical; 
+}
+
+.subtask-buttons { 
+  display:flex; 
+  gap:8px; 
+  margin-top:4px; 
+}
+
+.subtask-buttons button { 
+  flex:1; 
+}
+
+/* ===================== EDIT FIELDS ===================== */
+.edit-fields { 
+  display:flex; 
+  flex-direction:column; 
+  gap:8px; 
+  margin-top:6px; 
+}
+
+.edit-fields input,
+.edit-fields textarea {
+  padding:10px;
+  font-size:14px;
+  border-radius:6px;
+  border:1px solid #d8b4b4;
+  background:#fff;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.edit-actions { 
+  display:flex; 
+  gap:8px; 
+}
+
+.edit-actions button { 
+  flex:1; 
+}
+
+/* ===================== COMPLETED TASK STYLE ===================== */
+.task-card.completed .task-title,
+.task-card.completed .subtask-title,
+.task-card.completed .task-description { 
+  text-decoration:line-through; 
+  color:gray; 
+}
+
+/* ===================== RESPONSIVE (MOBILE) ===================== */
+@media (max-width:600px) {
+  .task-card { padding:12px; }
+  .task-input input, 
+  .task-input textarea, 
+  .subtask-form input, 
+  .subtask-form textarea { 
+    font-size:15px; 
+    padding:10px; 
+  }
+  .task-buttons button, 
+  .subtask-buttons button, 
+  .edit-actions button { 
+    font-size:13px; 
+    padding:8px; 
+  }
+}
